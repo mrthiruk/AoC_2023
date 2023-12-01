@@ -59,6 +59,8 @@ u64 get_calib_sum_v2(u32 len, char *buf) {
 				found_first = 0;
 			}
 			last = temp;
+			i += digit_lens[temp] - 1;
+			continue;
 		}
 		i++;
 	}
